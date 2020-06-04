@@ -1,0 +1,68 @@
+extends ../extends/layout
+block variables
+	- var title = "Sprayplast"
+
+block content
+	include ../includes/header
+	main
+		.container
+			.main-info
+				.row
+					.col-md-8
+						h2 Декоративная штукатурка во внутренней отделке
+				.row
+					.col-md-6
+						ul
+							li
+								span Премиальный внешний вид
+							li
+								span Высокая устойчивость покрытия
+							li
+								span Можно мыть мыльной водой
+					.col-md-6
+						include ../components/slider
+			.indoor.info-section
+				.row
+					.col-md-6
+						h3 Решение по отделке фасадов декоративной штукатуркой
+				.row
+					.col-md-4
+						.exterior-info
+							img(src='http://sprayplast.ru//images/works/8/6.jpg').img-thumbnail.border-0
+							h5 Применение материалов на основе акрила
+							p Материалы на основе акрила позволяют создать покрытие, имеющее важные преимущества
+							ul.list-unstyled
+								li - высокая прочность покрытия
+								li - легко моется
+								li - хорошая адгезия
+								li - не выцветает
+								li - не образуются микротрещины
+								li - высокая паропроницаемость
+					.col-md-4
+						.exterior-info
+							img(src='http://sprayplast.ru//images/works/8/6.jpg').img-thumbnail.border-0
+							h5 Механизированное и ручное нанесение
+							p Мы наносим декоративную штукатурку механизированно или вручную. Наша компания имеет большой опыт механизации отделочных процессов, что позволяет
+							ul.list-unstyled
+								li - увеличить скорость и качество отделки
+								li - добиться высокой повторяемости фактур на больших объёмах
+					.col-md-4
+						.exterior-info
+							img(src='http://sprayplast.ru//images/works/8/6.jpg').img-thumbnail.border-0
+							h5 Подбор фактуры и предоставление образцов
+							p В нашем Учебном центре мы можем изготовить образцы по вашему техническому заданию в нужном вам цвете. Согласованный вами образец фактуры будет полностью совпадать с фактическим результатом благодаря нашему опыту и применении выверенной и отработанной технологии нанесения.
+			.indoor.info-section
+				.row
+					.col-md-6
+						h3 Использование собственных материалов
+						p Важным нашим преимуществом является использование собственных отделочных материалов. Мы гарантируем высокое качество работ благодаря комплексному решению, включающему подбор или разработу уникальной фактуры, производство и поставку материалов и проведения работ нашими мастерами.
+						a(href='#').btn.btn-action.mb-0 Посмотреть материалы
+					.col-md-6
+						img(src='http://sprayplast.ru//images/works/8/6.jpg').img-fluid.w-100
+			.full-slider
+				include ../components/slider
+			include ../sections/how-we-work
+			include ../sections/textures
+			include ../sections/our-masters
+			include ../sections/contact-form
+	include ../includes/footer

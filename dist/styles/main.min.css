@@ -8750,6 +8750,21 @@ body {
   margin-top: 80px;
 }
 
+.exterior-info img {
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.exterior-info ul {
+  margin-top: 10px;
+}
+
+.exterior-info ul li {
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
