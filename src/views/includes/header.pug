@@ -1,25 +1,22 @@
 #top
-nav.navbar.navbar-expand
+nav.navbar.navbar-expand-lg.navbar-light.fixed-top
   .container
-    button.navbar-toggler.collapsed(type='button' data-toggle='collapse' data-target='#w0-collapse' aria-expanded='false')
-      span.sr-only Toggle navigation
-      span.icon-bar
-      span.icon-bar
-      span.icon-bar
     a.navbar-brand(href='#top')
-      img(src='./img/svg/logo.svg').img-fluid.m-auto
-    #w0-collapse.navbar-collapse.collapse(aria-expanded='false')
-      ul#w1.navbar-nav.navbar-right.nav
-        li.active
-          a(href='#') Внутреннаяя отделка
-        li
-          a(href='#') Отделочные материалы
-        li
-          a(href='#') Отделка фасадов
-        li
-          a(href='#') Каталог фактур
+      img(src='./img/svg/logo.svg').img-fluid
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#w0-collapse', aria-controls='w0-collapse', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #w0-collapse.collapse.navbar-collapse(aria-expanded='false')
+      ul.navbar-nav.mx-auto
+        li.nav-item.active
+          a(href='#').nav-link Внутреннаяя отделка
+        li.nav-item
+          a.nav-link(href='#') Отделочные материалы
+        li.nav-item
+          a.nav-link(href='#') Отделка фасадов
+        li.nav-item
+          a.nav-link(href='#') Каталог фактур
 
-    ul.navbar-nav.nav
+    ul.navbar-nav.nav.flex-column
       li
         a(href='#').phone-info 8 800 550 0680
       li

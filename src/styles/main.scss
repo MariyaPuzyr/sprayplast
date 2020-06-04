@@ -8,25 +8,13 @@
 @import "components/component";
 @import "sections/section";
 body {
-  font-family: $font_main, Roboto, sans-serif;
-}
-h3 {
-  font-size: 36px;
-  line-height: 32px;
-  font-family: $font_bold;
-  color: $color_txt;
-  margin: 0;
-  @include adapt_to('large-phone') {
-    font-size: 28px;
-  }
+  font-family: $font_main;
+  background-color: #f8f8f8;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-  .container {
-    max-width: 100%;
-    padding: 0 30px;
-  }
-}
-.form-control::placeholder {
-  color: $color_txt2;
+.indoor, .outdoor {
+  margin-bottom: 25px;
 }
