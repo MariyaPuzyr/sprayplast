@@ -1,0 +1,25 @@
+extends ./extends/layout
+block variables
+  - var title = "Sprayplast"
+
+block content
+  include ./includes/header
+  main
+    .container
+      include ./sections/banner
+      include ./sections/indoor
+      include ./sections/outdoor
+      include ./sections/materials
+  //  include ./sections/full-car-info
+  //  include ./sections/climbing-car-info
+  //  include ./sections/advantages-equipment
+  //  include ./sections/site-info
+  //  include ./sections/gallery
+  //  include ./sections/form
+  //  include ./sections/reviews
+  //  include ./sections/faq
+  //
+  //include ./includes/footer
+  //include ./components/modal-buy
+  //include ./components/modal-form
+  //include ./components/modal-thanks
