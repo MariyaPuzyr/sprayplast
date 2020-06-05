@@ -10,4 +10,7 @@ $(document).ready(function () {
   $('.get-texture-info').click(function () {
     $(".result").load("textures-detail.html");
   });
+  $(document).on('click', '.choose-another', function () {
+    $('.textures-detail').remove();
+  });
 });
