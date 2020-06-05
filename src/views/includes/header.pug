@@ -3,8 +3,6 @@ nav.navbar.navbar-expand-lg.navbar-light.fixed-top
   .container
     a.navbar-brand(href='#top')
       img(src='./img/svg/logo.svg').img-fluid
-    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#w0-collapse', aria-controls='w0-collapse', aria-expanded='false', aria-label='Toggle navigation')
-      span.navbar-toggler-icon
     #w0-collapse.collapse.navbar-collapse(aria-expanded='false')
       ul.navbar-nav.mx-auto
         li.nav-item.active
@@ -16,9 +14,11 @@ nav.navbar.navbar-expand-lg.navbar-light.fixed-top
         li.nav-item
           a.nav-link(href='#') Каталог фактур
 
-    ul.navbar-nav.nav.flex-column
+    ul.navbar-nav.nav.flex-column.contact-info
       li
         a(href='#').phone-info 8 800 550 0680
       li
         a(href='#').get-call заказать звонок
       li работаем без выходных
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#w0-collapse', aria-controls='w0-collapse', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon

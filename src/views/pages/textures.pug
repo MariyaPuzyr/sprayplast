@@ -1,0 +1,74 @@
+extends ../extends/layout
+block variables
+	- var title = "Sprayplast"
+
+block content
+	include ../includes/header
+	main
+		.container
+			.main-info
+				.row
+					.col-md-8
+						h2 Выберите фактуру декоративной штукатурки
+			.textures-nav
+				.row
+					.col-md-4
+						.thumbnail.thumbnail_grid.get-texture-info
+							img(src='http://sprayplast.ru/images/objects/ee666312060ccdd307f92f5a89e43fbd.jpg', alt='').img-fluid
+							.caption.object-content
+								h3.object-title Арт-бетон
+								.object-price от 1150 р/м2
+					.col-md-4
+						.thumbnail.thumbnail_grid.get-texture-info
+							img(src='http://sprayplast.ru/images/objects/ee666312060ccdd307f92f5a89e43fbd.jpg', alt='').img-fluid
+							.caption.object-content
+								h3.object-title Арт-бетон
+								.object-price от 1150 р/м2
+					.col-md-4
+						.thumbnail.thumbnail_grid.get-texture-info
+							img(src='http://sprayplast.ru/images/objects/ee666312060ccdd307f92f5a89e43fbd.jpg', alt='').img-fluid
+							.caption.object-content
+								h3.object-title Арт-бетон
+								.object-price от 1150 р/м2
+					.col-md-4
+						.thumbnail.thumbnail_grid.get-texture-info
+							img(src='http://sprayplast.ru/images/objects/ee666312060ccdd307f92f5a89e43fbd.jpg', alt='').img-fluid
+							.caption.object-content
+								h3.object-title Арт-бетон
+								.object-price от 1150 р/м2
+					.col-md-4
+						.thumbnail.thumbnail_grid.get-texture-info
+							img(src='http://sprayplast.ru/images/objects/ee666312060ccdd307f92f5a89e43fbd.jpg', alt='').img-fluid
+							.caption.object-content
+								h3.object-title Арт-бетон
+								.object-price от 1150 р/м2
+					.col-md-4
+						.thumbnail.thumbnail_grid.get-texture-info
+							img(src='http://sprayplast.ru/images/objects/ee666312060ccdd307f92f5a89e43fbd.jpg', alt='').img-fluid
+							.caption.object-content
+								h3.object-title Арт-бетон
+								.object-price от 1150 р/м2
+					.col-md-4
+						.thumbnail.thumbnail_grid.get-texture-info
+							img(src='http://sprayplast.ru/images/objects/ee666312060ccdd307f92f5a89e43fbd.jpg', alt='').img-fluid
+							.caption.object-content
+								h3.object-title Арт-бетон
+								.object-price от 1150 р/м2
+					.col-md-4
+						.thumbnail.thumbnail_grid.get-texture-info
+							img(src='http://sprayplast.ru/images/objects/ee666312060ccdd307f92f5a89e43fbd.jpg', alt='').img-fluid
+							.caption.object-content
+								h3.object-title Арт-бетон
+								.object-price от 1150 р/м2
+					.col-md-4
+						.thumbnail.thumbnail_grid.get-texture-info.object_new
+							.caption.object-content.text-center
+								p.bigplus +
+								h3.object-title Загрузить фактуру
+
+			.result
+			.full-slider
+				include ../components/slider
+			include ../sections/contact-form
+	include ../components/select-textures
+	include ../includes/footer

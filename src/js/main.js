@@ -7,4 +7,7 @@ $(document).ready(function () {
       o() >= 10 ? $(".navbar").addClass("fixed-menu") : $(".navbar").removeClass("fixed-menu")
     }).triggerHandler("scroll")
   });
+  $('.get-texture-info').click(function () {
+    $(".result").load("textures-detail.html");
+  });
 });
