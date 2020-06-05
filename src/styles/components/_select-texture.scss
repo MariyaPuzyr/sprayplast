@@ -5,6 +5,7 @@
   left: 0;
   display: flex;
   justify-content: center;
+  z-index: 1;
   &__item {
     background: #E6E6E6;
     display: flex;
@@ -12,10 +13,17 @@
     font-size: 18px;
     line-height: 21px;
     padding: 10px 20px;
+    @include adapt_to('phone'){
+      font-size: 14px;
+      line-height: normal;
+    }
   }
   .selected-issue {
     display: flex;
     margin-left: 30px;
+    @include adapt_to('phone'){
+      margin-left: 10px;
+    }
   }
   .compare, .clear {
     text-decoration: underline;

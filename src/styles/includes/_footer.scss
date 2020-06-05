@@ -4,6 +4,9 @@
   border-top: 1px solid #ddd;
   padding: 20px 0;
   color: #373737;
+  @include adapt_to('phone'){
+    padding-bottom: 40px;
+  }
   &-logo {
     margin-bottom: 15px;
     display: block;

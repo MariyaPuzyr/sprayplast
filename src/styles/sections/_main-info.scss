@@ -7,6 +7,9 @@
     line-height: normal;
     margin-top: 75px;
     margin-bottom: 50px;
+    @include adapt_to('large-phone'){
+      margin: 25px 0;
+    }
   }
   ul {
     margin-top: 0;

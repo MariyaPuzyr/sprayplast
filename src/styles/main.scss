@@ -20,6 +20,9 @@ body {
 }
 .full-slider {
   margin-top: 80px;
+  @include adapt_to('large-phone'){
+    margin-top: 30px;
+  }
 }
 .exterior-info {
   img {

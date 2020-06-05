@@ -8636,6 +8636,7 @@ ul {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .select-texture__item {
@@ -8799,6 +8800,10 @@ ul {
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
   margin-bottom: 30px;
+}
+
+.textures-detail .choose-another {
+  cursor: pointer;
 }
 
 .textures-detail .get-good-quality {
@@ -13789,10 +13794,6 @@ body {
 }
 
 @media (max-width: 991px) {
-  .navbar .container {
-    position: relative;
-  }
-
   .navbar .navbar-toggler {
     position: absolute;
     right: 0;
@@ -13806,17 +13807,6 @@ body {
     top: 100%;
   }
 
-  .navbar .navbar-collapse::after {
-    content: '';
-    position: absolute;
-    width: 120%;
-    height: 100%;
-    background: #fff;
-    left: -10%;
-    top: 0;
-    z-index: -1;
-  }
-
   .navbar .phone-info {
     font-size: 14px;
     line-height: normal;
@@ -13824,6 +13814,35 @@ body {
 
   .navbar .contact-info {
     margin-right: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-info h2 {
+    margin: 25px 0;
+  }
+
+  .info-section h3 {
+    font-size: 24px;
+  }
+
+  .info-section h5 {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .info-section p {
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .info-section .btn {
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  .full-slider {
+    margin-top: 30px;
   }
 }
 
@@ -13857,6 +13876,16 @@ body {
     width: 100%;
     padding: 10px 15px;
   }
+
+  .navbar .navbar-collapse .navbar-nav {
+    max-width: 540px;
+    padding: 0 15px;
+  }
+
+  .navbar .navbar-toggler {
+    right: 15px;
+    top: 20px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -13879,6 +13908,21 @@ body {
   .navbar-expand-sm > .container-xl {
     padding-right: 0;
     padding-left: 0;
+  }
+}
+
+@media (max-width: 568px) {
+  .footer {
+    padding-bottom: 40px;
+  }
+
+  .select-texture__item {
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .select-texture .selected-issue {
+    margin-left: 10px;
   }
 }
 
@@ -13973,6 +14017,17 @@ body {
 
   .btn-canvas-p {
     font-size: 0.9em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar .navbar-collapse .navbar-nav {
+    max-width: 720px;
+  }
+
+  .navbar .navbar-toggler {
+    right: 15px;
+    top: 20px;
   }
 }
 
