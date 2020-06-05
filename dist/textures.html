@@ -12,13 +12,13 @@
   <body>
     <div id="top"></div>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="container"><a class="navbar-brand" href="#top"><img class="img-fluid" src="./img/svg/logo.svg"></a>
+      <div class="container"><a class="navbar-brand" href="index.html"><img class="img-fluid" src="./img/svg/logo.svg"></a>
         <div class="collapse navbar-collapse" id="w0-collapse" aria-expanded="false">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item active"><a class="nav-link" href="#">Внутреннаяя отделка</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Отделочные материалы</a></li>
+            <li class="nav-item active"><a class="nav-link" href="interior.html">Внутреннаяя отделка</a></li>
+            <li class="nav-item"><a class="nav-link" href="exterior.html">Отделочные материалы</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Отделка фасадов</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Каталог фактур</a></li>
+            <li class="nav-item"><a class="nav-link" href="textures.html">Каталог фактур</a></li>
           </ul>
         </div>
         <ul class="navbar-nav nav flex-column contact-info">
@@ -165,7 +165,7 @@
       <div class="select-texture__item">
         <div class="selected">Выбрано фактур: 2</div>
         <div class="selected-issue">
-          <div class="compare">Сравнить</div>
+          <div class="compare" data-toggle="modal" data-target="#compare-textures">Сравнить</div>
           <div class="clear">Очистить</div>
         </div>
       </div>
@@ -195,6 +195,49 @@
         </div>
       </div>
     </footer>
+    <div class="modal fade" id="compare-textures" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog compare-textures">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <div class="compare-list">
+              <div class="compare-item">
+                <div class="compare-item__img"><img class="img-fluid" src="http://sprayplast.ru/images/objects/ee666312060ccdd307f92f5a89e43fbd.jpg" alt=""></div>
+                <div class="compare-item__list">
+                  <h3 class="compare-item__name object-title">Арт-бетон #ab0120</h3>
+                  <div class="object-price mb-3">1150 р/м2</div>
+                  <form action="#">
+                    <div class="form-group">
+                      <input class="form-control" type="text" value="300 м2">
+                    </div>
+                    <div class="form-group form-inline justify-content-between">
+                      <div class="compare-item__full-price">345 000 р</div>
+                      <button class="btn btn-action" type="submit">Заказать</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="compare-item">
+                <div class="compare-item__img"><img class="img-fluid" src="http://sprayplast.ru/images/objects/ee666312060ccdd307f92f5a89e43fbd.jpg" alt=""></div>
+                <div class="compare-item__list">
+                  <h3 class="compare-item__name object-title">Арт-бетон #ab0120</h3>
+                  <div class="object-price mb-3">1150 р/м2</div>
+                  <form action="#">
+                    <div class="form-group">
+                      <input class="form-control" type="text" value="300 м2">
+                    </div>
+                    <div class="form-group form-inline justify-content-between">
+                      <div class="compare-item__full-price">345 000 р</div>
+                      <button class="btn btn-action" type="submit">Заказать</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./js/main-libs.min.js"></script>
     <script src="./js/main.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>

@@ -1,5 +1,8 @@
 .info-section {
   padding-top: 75px;
+  @include adapt_to('large-phone'){
+    padding-top: 25px;
+  }
   h3 {
     font-weight: bold;
     font-size: 30px;

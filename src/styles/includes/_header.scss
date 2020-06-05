@@ -34,9 +34,6 @@
     color: #C9C9C9;
   }
   @include adapt_to('desktop'){
-    //.container {
-    //  position: relative;
-    //}
     .navbar-toggler {
       position: absolute;
       right: 0;
